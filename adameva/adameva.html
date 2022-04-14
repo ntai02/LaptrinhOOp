@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="Apple.js"></script>
+<script src="Human.js"></script>
+<script>
+    let human = new Human()
+    let apple = new Apple(human)
+    apple.weight = 10
+    human.checkApple()
+    human.name = "Adam"
+    human.weight = 50
+    console.log(apple)
+    console.log(human)
+</script>
+</body>
+</html>

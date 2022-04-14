@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(name) {
+            this.name = name;
+            this.pin = 100;
+            this.inbox = [];
+            this.outbox = [];
+            this.message = " ";
+            this.status = false;
+        }
+
+        writeMessage(text) {
+            this.message = text
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        sendMessage(phone) {
+            this.outbox.push(this.message)
+            phone.inbox.push(this.message)
+        }
+        readInbox (phone) {
+
+        }
+        readOutbox (phone) {
+
+        }
+    }
+
+
+    let SamSung = new Mobile('samsung')
+    let Iphone = new Mobile('Iphone')
+    if (status == true) {
+        Iphone.writeMessage('xin chao')
+        Iphone.sendMessage(SamSung)
+        SamSung.writeMessage('hi')
+        SamSung.sendMessage(Iphone)
+    } else (status == false)
+    alert("vui long bat dien thoai")
+    console.log(Iphone.inbox)
+
+</script>
+</body>
+</html>
